@@ -6,6 +6,10 @@
     <title>Davies — Developer Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/splitting.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
@@ -13,7 +17,7 @@
       <div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between gap-3">
         <div class="brand text-center text-md-start">
           <h1 class="m-0 display-name">Davies</h1>
-          <p class="m-0 subtitle">Developer • Nigeria</p>
+          <p class="m-0 subtitle"><span class="typed-text"></span></p>
         </div>
         <nav class="d-flex flex-wrap justify-content-center gap-2 align-items-center">
           <a href="#projects" class="nav-link btn btn-outline-dark btn-sm m-0">Work</a>
@@ -30,7 +34,7 @@
             <div class="col-lg-7 mb-4 mb-lg-0">
               <div class="card playful-card askew-card p-5">
                 <div class="hero-text">
-                  <h2 class="mb-3">Playful code. Serious results.</h2>
+                  <h2 class="mb-3" data-splitting>Playful code. Serious results.</h2>
                   <p class="lead mb-4">Hi, I’m Davies. I design and build clean, responsive web experiences where clarity comes first and complexity stays politely behind the curtain. Every pixel has a job, every interaction a purpose.
 
 This is a space for thoughtful front-end craftsmanship. Smooth layouts, intuitive flows, and code that behaves itself. Whether it’s a landing page, a full product interface, or something still taking shape in your imagination, the goal is simple: make the web feel easy, fast, and human.
@@ -48,44 +52,73 @@ Scroll on. The good stuff lives just below.</p>
         </div>
       </section>
 
-      <section id="projects" class="projects py-5 bg-light">
+       <section id="projects" class="projects py-5 bg-light">
         <div class="container">
           <h3 class="section-title">Selected Projects</h3>
-          <div class="row gy-4 mt-3">
-            <div class="col-md-6 col-lg-4">
-              <article class="card playful-card h-100">
-                <img src="images/project1.svg" class="card-img-top project-photo" alt="Project 1">
-                <div class="card-body">
-                  <h5 class="card-title">Project A</h5>
-                  <p class="card-text">A lightweight UI kit built with performance and joy in mind.</p>
-                </div>
-              </article>
+          
+          <!-- Swiper -->
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <article class="card playful-card h-100">
+                  <img src="images/project1.svg" class="card-img-top project-photo" alt="Project 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Project A</h5>
+                    <p class="card-text">A lightweight UI kit built with performance and joy in mind.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card playful-card h-100">
+                  <img src="images/project2.svg" class="card-img-top project-photo" alt="Project 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Project B</h5>
+                    <p class="card-text">An API visualization tool with delightful micro-interactions.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card playful-card h-100">
+                  <img src="images/project3.svg" class="card-img-top project-photo" alt="Project 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Project C</h5>
+                    <p class="card-text">A freelance client dashboard with pragmatic UX and strong typography.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card playful-card h-100">
+                  <img src="images/project1.svg" class="card-img-top project-photo" alt="Project 4">
+                  <div class="card-body">
+                    <h5 class="card-title">Project D</h5>
+                    <p class="card-text">E-commerce concept focused on smooth cart transitions.</p>
+                  </div>
+                </article>
+              </div>
+              <div class="swiper-slide">
+                <article class="card playful-card h-100">
+                  <img src="images/project2.svg" class="card-img-top project-photo" alt="Project 5">
+                  <div class="card-body">
+                    <h5 class="card-title">Project E</h5>
+                    <p class="card-text">Interactive storytelling experiment using scroll-triggered APIs.</p>
+                  </div>
+                </article>
+              </div>
             </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="card playful-card h-100">
-                <img src="images/project2.svg" class="card-img-top project-photo" alt="Project 2">
-                <div class="card-body">
-                  <h5 class="card-title">Project B</h5>
-                  <p class="card-text">An API visualization tool with delightful micro-interactions.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6 col-lg-4">
-              <article class="card playful-card h-100">
-                <img src="images/project3.svg" class="card-img-top project-photo" alt="Project 3">
-                <div class="card-body">
-                  <h5 class="card-title">Project C</h5>
-                  <p class="card-text">A freelance client dashboard with pragmatic UX and strong typography.</p>
-                </div>
-              </article>
-            </div>
+            
+            <div class="swiper-pagination mt-4"></div>
+            <div class="swiper-button-next d-none d-md-block"></div>
+            <div class="swiper-button-prev d-none d-md-block"></div>
           </div>
         </div>
       </section>
 
+
+
       <section id="about" class="about py-5">
         <div class="container">
           <h3 class="section-title">About</h3>
+          <div class="row justify-content-center">
             <div class="col-lg-7">
               <div class="card playful-card askew-card p-5 text-center">
                 <p class="mb-4">Hi — I'm Davies, a front-end developer based in Nigeria. I specialise in building maintainable web apps with a focus on usability, accessibility, and a little personality. I prefer pared-back, monochrome interfaces that let colourful imagery and thoughtful interactions shine.</p>
@@ -115,10 +148,59 @@ Scroll on. The good stuff lives just below.</p>
         </div>
       </section>
 
+
+
+      <section id="experience" class="experience py-5">
+        <div class="container">
+          <h3 class="section-title">Experience</h3>
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              
+              <!-- Job 1 -->
+              <div class="card playful-card mb-4">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                    <h5 class="card-title mb-0 fw-bold">Novel Integrated Services Limited</h5>
+                    <span class="badge bg-dark rounded-pill">Oct 2025 - Present</span>
+                  </div>
+                  <h6 class="text-muted mb-3">Web Developer</h6>
+                  <p class="card-text">Building and maintaining web solutions using a full suite of modern development tools. Collaborating with cross-functional teams to deliver high-quality digital products.</p>
+                </div>
+              </div>
+
+              <!-- Job 2 -->
+              <div class="card playful-card mb-4">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                    <h5 class="card-title mb-0 fw-bold">Freelance</h5>
+                    <span class="badge bg-light text-dark border border-dark rounded-pill">Sep 2021 - Oct 2025</span>
+                  </div>
+                  <h6 class="text-muted mb-3">Full Stack Developer</h6>
+                  <p class="card-text">Delivered diverse projects for clients including landing pages, web applications, and business sites. Managed the entire development lifecycle from requirement gathering to deployment.</p>
+                </div>
+              </div>
+
+              <!-- Job 3 -->
+              <div class="card playful-card">
+                <div class="card-body p-4">
+                  <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                    <h5 class="card-title mb-0 fw-bold">LeadNicely</h5>
+                    <span class="badge bg-light text-dark border border-dark rounded-pill">Mar 2021 - Sep 2021</span>
+                  </div>
+                  <h6 class="text-muted mb-3">WordPress Developer Intern</h6>
+                  <p class="card-text">Gained hands-on experience in remote web development. Specialized in customizing WordPress themes and plugins to meet specific client needs.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="contact" class="contact py-5 bg-light">
         <div class="container">
           <h3 class="section-title">Contact</h3>
-          <p class="mb-4">Send a message — this will open your mail client pre-addressed to <strong>dvsolaniyi@gmail.com</strong>.</p>
+          <p class="mb-4">Send a message</p>
           <div class="row">
             <div class="col-md-8">
               <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form card p-4 shadow-sm">
@@ -143,7 +225,11 @@ Scroll on. The good stuff lives just below.</p>
             <div class="col-md-4 mt-3 mt-md-0">
               <div class="card p-3 playful-card">
                 <h5>Availability</h5>
-                <p class="mb-0">Open for freelance and collaborative projects.</p>
+                <p class="mb-3">Open for freelance and collaborative projects.</p>
+                <div class="d-flex gap-3">
+                  <a href="#" class="btn btn-sm btn-dark" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                  <a href="#" class="btn btn-sm btn-success" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -152,10 +238,19 @@ Scroll on. The good stuff lives just below.</p>
     </main>
 
     <footer class="py-4 text-center">
-      <div class="container small text-muted">© Davies — Built with HTML, CSS, Bootstrap, and vanilla JS</div>
+      <div class="container text-muted">
+        <div class="mb-2">
+            <a href="#" class="text-muted text-decoration-none mx-2 fs-4"><i class="bi bi-github"></i></a>
+            <a href="#" class="text-muted text-decoration-none mx-2 fs-4"><i class="bi bi-whatsapp"></i></a>
+        </div>
+        <small>© Davies</small>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/splitting.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/swiper.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
