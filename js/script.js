@@ -39,40 +39,75 @@ document.addEventListener("DOMContentLoaded", () => {
   // 3. Playful Form Handler
   const contactForm = document.getElementById("contactForm");
   if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
+    contactForm.addEventListener("submit", async (e) => {
       e.preventDefault();
 
       const btn = contactForm.querySelector('button[type="submit"]');
       const originalText = btn.innerText;
       const statusDiv = document.getElementById("formStatus");
+      const data = new FormData(contactForm);
 
       // Quick playful animation
       btn.innerText = "🚀 Sending...";
       btn.disabled = true;
 
-      setTimeout(() => {
-        btn.innerText = "Sent!";
-        btn.classList.remove("btn-dark");
-        btn.classList.add("btn-outline-dark");
+      try {
+        const response = await fetch(contactForm.action, {
+          method: contactForm.method,
+          body: data,
+          headers: {
+            "Accept": "application/json",
+          },
+        });
 
-        statusDiv.innerHTML =
-          "<strong>Message 'sent'!</strong> (This is a demo)";
-        statusDiv.classList.add("text-success");
+        if (response.ok) {
+          // Success
+          btn.innerText = "Sent!";
+          btn.classList.remove("btn-dark");
+          btn.classList.add("btn-outline-dark");
 
-        // Simulate mailto open (as described in HTML)
-        // In a real app we'd trigger the mailto here or send an API request
-        // window.location.href = `mailto:dvsolaniyi@gmail.com...`;
+          statusDiv.innerHTML =
+            "<strong>Message sent!</strong> Thanks for reaching out.";
+          statusDiv.classList.add("text-success");
 
-        setTimeout(() => {
-          btn.innerText = originalText;
-          btn.disabled = false;
-          btn.classList.add("btn-dark");
-          btn.classList.remove("btn-outline-dark");
           contactForm.reset();
+
+          setTimeout(() => {
+            btn.innerText = originalText;
+            btn.disabled = false;
+            btn.classList.add("btn-dark");
+            btn.classList.remove("btn-outline-dark");
+            // clear status after a while
+            setTimeout(() => {
+              statusDiv.innerHTML = "";
+              statusDiv.classList.remove("text-success");
+            }, 3000);
+          }, 3000);
+        } else {
+          // Service Error
+          const result = await response.json();
+          statusDiv.innerHTML = "Oops! could not send.";
+          statusDiv.classList.add("text-danger");
+          if (Object.hasOwn(result, "errors")) {
+            statusDiv.innerHTML = result["errors"]
+              .map((error) => error["message"])
+              .join(", ");
+          }
+          throw new Error("Form submission failed");
+        }
+      } catch (error) {
+        // Network Error
+        btn.innerText = "Retry";
+        btn.disabled = false;
+        if (!statusDiv.innerHTML) {
+          statusDiv.innerHTML = "Oops! Something went wrong.";
+          statusDiv.classList.add("text-danger");
+        }
+        setTimeout(() => {
           statusDiv.innerHTML = "";
-          statusDiv.classList.remove("text-success");
-        }, 3000);
-      }, 1500);
+          statusDiv.classList.remove("text-danger");
+        }, 5000);
+      }
     });
   }
 });
