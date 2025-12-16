@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Davies — Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Inter:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <header class="site-header py-4">
+      <div class="container d-flex align-items-center justify-content-between">
+        <div class="brand">
+          <h1 class="m-0 display-name">Davies</h1>
+          <p class="m-0 subtitle">Developer • Nigeria</p>
+        </div>
+        <nav class="d-flex align-items-center">
+          <a href="#projects" class="nav-link">Work</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#contact" class="nav-link btn btn-outline-dark btn-sm">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero py-5">
+        <div class="container d-lg-flex align-items-center gap-4">
+          <div class="hero-text flex-grow-1">
+            <h2 class="mb-3">Playful code. Serious results.</h2>
+            <p class="lead">I build delightful and maintainable web experiences — mostly JavaScript, a little magic, and strong vibes from Lagos.</p>
+            <p><a href="#contact" class="btn btn-dark btn-lg">Say hello</a></p>
+          </div>
+          <div class="hero-image ms-lg-4">
+            <img src="images/portrait.svg" alt="Davies portrait" class="img-fluid rounded-circle color-photo">
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="projects py-5 bg-light">
+        <div class="container">
+          <h3 class="section-title">Selected Projects</h3>
+          <div class="row gy-4 mt-3">
+            <div class="col-md-6 col-lg-4">
+              <article class="card playful-card h-100">
+                <img src="images/project1.svg" class="card-img-top project-photo" alt="Project 1">
+                <div class="card-body">
+                  <h5 class="card-title">Project A</h5>
+                  <p class="card-text">A lightweight UI kit built with performance and joy in mind.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card playful-card h-100">
+                <img src="images/project2.svg" class="card-img-top project-photo" alt="Project 2">
+                <div class="card-body">
+                  <h5 class="card-title">Project B</h5>
+                  <p class="card-text">An API visualization tool with delightful micro-interactions.</p>
+                </div>
+              </article>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <article class="card playful-card h-100">
+                <img src="images/project3.svg" class="card-img-top project-photo" alt="Project 3">
+                <div class="card-body">
+                  <h5 class="card-title">Project C</h5>
+                  <p class="card-text">A freelance client dashboard with pragmatic UX and strong typography.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about py-5">
+        <div class="container">
+          <h3 class="section-title">About</h3>
+          <div class="row align-items-center mt-3">
+            <div class="col-lg-8">
+              <p>Hi — I'm Davies, a front-end developer based in Nigeria. I specialise in building maintainable web apps with a focus on usability, accessibility, and a little personality. I prefer pared-back, monochrome interfaces that let colourful imagery and thoughtful interactions shine.</p>
+              <p>Skills: JavaScript • HTML • CSS • Bootstrap • UX</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="#contact" class="btn btn-outline-dark">Let's work</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact py-5 bg-light">
+        <div class="container">
+          <h3 class="section-title">Contact</h3>
+          <p class="mb-4">Send a message — this will open your mail client pre-addressed to <strong>dvsolaniyi@gmail.com</strong>.</p>
+          <div class="row">
+            <div class="col-md-8">
+              <form id="contactForm" class="contact-form card p-4 shadow-sm">
+                <div class="mb-3">
+                  <label class="form-label">Name</label>
+                  <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Your Email</label>
+                  <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Message</label>
+                  <textarea id="message" class="form-control" rows="5" required></textarea>
+                </div>
+                <div class="d-flex align-items-center gap-3">
+                  <button type="submit" class="btn btn-dark">Open Mail App</button>
+                  <div id="formStatus" class="form-status text-muted small"></div>
+                </div>
+              </form>
+            </div>
+            <div class="col-md-4 mt-3 mt-md-0">
+              <div class="card p-3 playful-card">
+                <h5>Availability</h5>
+                <p class="mb-0">Open for freelance and collaborative projects.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="py-4 text-center">
+      <div class="container small text-muted">© Davies — Built with HTML, CSS, Bootstrap, and vanilla JS</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

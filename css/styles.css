@@ -1,0 +1,194 @@
+/* Global Vars */
+:root {
+  --black: #000000;
+  --white: #ffffff;
+  --border-width: 3px;
+  --shadow-offset: 5px;
+  --radius: 12px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--black);
+  background-color: var(--white);
+  /* Striped background pattern for texture - subtle */
+  background-image: linear-gradient(
+      45deg,
+      #f0f0f0 25%,
+      transparent 25%,
+      transparent 75%,
+      #f0f0f0 75%,
+      #f0f0f0
+    ),
+    linear-gradient(
+      45deg,
+      #f0f0f0 25%,
+      transparent 25%,
+      transparent 75%,
+      #f0f0f0 75%,
+      #f0f0f0
+    );
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.brand,
+.display-name {
+  font-family: "Baloo 2", cursive;
+  font-weight: 700;
+  color: var(--black);
+}
+
+/* Playful Utilities */
+.playful-card {
+  border: var(--border-width) solid var(--black);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--black);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.playful-card:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--black);
+}
+
+/* Buttons */
+.btn {
+  border: var(--border-width) solid var(--black) !important;
+  border-radius: 50px;
+  font-weight: 600;
+  padding: 0.6rem 1.5rem;
+  box-shadow: 3px 3px 0 var(--black);
+  transition: all 0.2s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.btn:hover {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0 var(--black);
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn-dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn-dark:hover {
+  background-color: var(--white);
+  color: var(--black);
+  box-shadow: 1px 1px 0 var(--black);
+}
+
+/* Navigation */
+.site-header {
+  border-bottom: var(--border-width) solid var(--black);
+  background: var(--white);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: var(--black) !important;
+  font-weight: 600;
+  position: relative;
+  margin-right: 1rem;
+}
+
+.nav-link:not(.btn)::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: var(--black);
+  transition: width 0.3s;
+}
+
+.nav-link:not(.btn):hover::after {
+  width: 100%;
+}
+
+/* Hero Section */
+.hero-image img {
+  border: var(--border-width) solid var(--black);
+  box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--black);
+  filter: grayscale(100%); /* Force B&W */
+  border-radius: 50%; /* Circle */
+  transition: filter 0.3s;
+}
+
+.hero-image img:hover {
+  filter: grayscale(0%); /* Color on hover */
+}
+
+/* Projects */
+.project-photo {
+  border-bottom: var(--border-width) solid var(--black);
+  filter: grayscale(100%) contrast(1.2);
+  transition: filter 0.3s;
+  background-color: #eee;
+  padding: 2rem; /* Add spacing so visuals look like illustrations */
+}
+
+.playful-card:hover .project-photo {
+  filter: grayscale(0%) contrast(1);
+}
+
+/* Inputs */
+.form-control {
+  border: var(--border-width) solid var(--black);
+  border-radius: var(--radius);
+  box-shadow: 3px 3px 0 #ddd; /* Softer shadow for inputs */
+  padding: 0.75rem;
+}
+
+.form-control:focus {
+  border-color: var(--black);
+  box-shadow: 3px 3px 0 var(--black);
+  outline: none;
+}
+
+/* Section Titles */
+.section-title {
+  display: inline-block;
+  border-bottom: 4px solid var(--black);
+  padding-bottom: 0.2rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+}
+
+/* Animations */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+footer {
+  border-top: var(--border-width) solid var(--black);
+  background: var(--black);
+  color: var(--white) !important;
+}
+
+footer .text-muted {
+  color: #ccc !important;
+}
