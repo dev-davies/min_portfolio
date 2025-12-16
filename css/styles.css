@@ -11,25 +11,10 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--black);
   background-color: var(--white);
-  /* Striped background pattern for texture - subtle */
-  background-image: linear-gradient(
-      45deg,
-      #f0f0f0 25%,
-      transparent 25%,
-      transparent 75%,
-      #f0f0f0 75%,
-      #f0f0f0
-    ),
-    linear-gradient(
-      45deg,
-      #f0f0f0 25%,
-      transparent 25%,
-      transparent 75%,
-      #f0f0f0 75%,
-      #f0f0f0
-    );
-  background-size: 20px 20px;
-  background-position: 0 0, 10px 10px;
+  background-color: #f4f4f4;
+  /* Catchy Dot Pattern */
+  background-image: radial-gradient(circle, #000 2px, transparent 2.5px);
+  background-size: 30px 30px;
 }
 
 h1,
@@ -55,7 +40,22 @@ h6,
   overflow: hidden;
 }
 
-.playful-card:hover {
+/* Askew Effect Utility */
+.askew-card {
+  transform: rotate(-1.5deg);
+}
+
+.askew-card > * {
+  transform: rotate(1.5deg);
+}
+
+/* Ensure hover behaves correctly with rotation */
+.playful-card.askew-card:hover {
+  transform: rotate(-1.5deg) translate(2px, 2px);
+  box-shadow: 2px 2px 0 var(--black);
+}
+
+.playful-card:not(.askew-card):hover {
   transform: translate(2px, 2px);
   box-shadow: 2px 2px 0 var(--black);
 }
@@ -126,7 +126,7 @@ h6,
   border: var(--border-width) solid var(--black);
   box-shadow: var(--shadow-offset) var(--shadow-offset) 0 var(--black);
   filter: grayscale(100%); /* Force B&W */
-  border-radius: 50%; /* Circle */
+  border-radius: var(--radius); /* Rounded square */
   transition: filter 0.3s;
 }
 
@@ -192,3 +192,33 @@ footer {
 footer .text-muted {
   color: #ccc !important;
 }
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .display-name {
+    font-size: 2rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .playful-card {
+    padding: 1.5rem !important; /* Reduce padding on small screens */
+  }
+  
+  /* Tame rotations on mobile if needed, though they look cute small too */
+  .askew-card {
+    transform: rotate(-1deg);
+  }
+  
+  .askew-card > * {
+    transform: rotate(1deg);
+  }
+  
+  /* Ensure hero image isn't too huge on mobile */
+  .hero-image img {
+    max-width: 80%;
+  }
+}
+

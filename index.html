@@ -10,29 +10,40 @@
   </head>
   <body>
     <header class="site-header py-4">
-      <div class="container d-flex align-items-center justify-content-between">
-        <div class="brand">
+      <div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between gap-3">
+        <div class="brand text-center text-md-start">
           <h1 class="m-0 display-name">Davies</h1>
           <p class="m-0 subtitle">Developer • Nigeria</p>
         </div>
-        <nav class="d-flex align-items-center">
-          <a href="#projects" class="nav-link btn btn-outline-dark btn-sm">Work</a>
-          <a href="#about" class="nav-link btn btn-outline-dark btn-sm">About</a>
-          <a href="#contact" class="nav-link btn btn-outline-dark btn-sm">Contact</a>
+        <nav class="d-flex flex-wrap justify-content-center gap-2 align-items-center">
+          <a href="#projects" class="nav-link btn btn-outline-dark btn-sm m-0">Work</a>
+          <a href="#about" class="nav-link btn btn-outline-dark btn-sm m-0">About</a>
+          <a href="#contact" class="nav-link btn btn-outline-dark btn-sm m-0">Contact</a>
         </nav>
       </div>
     </header>
 
     <main>
       <section class="hero py-5">
-        <div class="container d-lg-flex align-items-center gap-4">
-          <div class="hero-text flex-grow-1">
-            <h2 class="mb-3">Playful code. Serious results.</h2>
-            <p class="lead">I build delightful and maintainable web experiences — mostly JavaScript, a little magic, and strong vibes from Lagos.</p>
-            <p><a href="#contact" class="btn btn-dark btn-lg">Say hello</a></p>
-          </div>
-          <div class="hero-image ms-lg-4">
-            <img src="images/portrait.svg" alt="Davies portrait" class="img-fluid rounded-circle color-photo">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-7 mb-4 mb-lg-0">
+              <div class="card playful-card askew-card p-5">
+                <div class="hero-text">
+                  <h2 class="mb-3">Playful code. Serious results.</h2>
+                  <p class="lead mb-4">Hi, I’m Davies. I design and build clean, responsive web experiences where clarity comes first and complexity stays politely behind the curtain. Every pixel has a job, every interaction a purpose.
+
+This is a space for thoughtful front-end craftsmanship. Smooth layouts, intuitive flows, and code that behaves itself. Whether it’s a landing page, a full product interface, or something still taking shape in your imagination, the goal is simple: make the web feel easy, fast, and human.
+
+Scroll on. The good stuff lives just below.</p>
+                  <p><a href="#contact" class="btn btn-dark btn-lg">Say hello</a></p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-1 text-center font-weight-bold mt-5 mt-lg-0">
+               <!-- Image standalone on the side, slightly rotated for fun -->
+               <img src="images/portrait.svg" alt="Davies portrait" class="img-fluid color-photo playful-card" style="transform: rotate(3deg);">
+            </div>
           </div>
         </div>
       </section>
@@ -75,14 +86,31 @@
       <section id="about" class="about py-5">
         <div class="container">
           <h3 class="section-title">About</h3>
-          <div class="row align-items-center mt-3">
-            <div class="col-lg-8">
-              <p>Hi — I'm Davies, a front-end developer based in Nigeria. I specialise in building maintainable web apps with a focus on usability, accessibility, and a little personality. I prefer pared-back, monochrome interfaces that let colourful imagery and thoughtful interactions shine.</p>
-              <p>Skills: JavaScript • HTML • CSS • Bootstrap • UX</p>
+            <div class="col-lg-7">
+              <div class="card playful-card askew-card p-5 text-center">
+                <p class="mb-4">Hi — I'm Davies, a front-end developer based in Nigeria. I specialise in building maintainable web apps with a focus on usability, accessibility, and a little personality. I prefer pared-back, monochrome interfaces that let colourful imagery and thoughtful interactions shine.</p>
+                <a href="#contact" class="btn btn-outline-dark">Let's work</a>
+              </div>
             </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="#contact" class="btn btn-outline-dark">Let's work</a>
-            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills py-5 bg-white">
+        <div class="container">
+          <h3 class="section-title">Toolkit</h3>
+          <div class="row justify-content-center mt-3">
+             <div class="col-lg-8">
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+                    <div class="card playful-card p-3 px-4">HTML</div>
+                    <div class="card playful-card p-3 px-4">CSS</div>
+                    <div class="card playful-card p-3 px-4">JavaScript</div>
+                    <div class="card playful-card p-3 px-4">Bootstrap</div>
+                    <div class="card playful-card p-3 px-4">Python</div>
+                    <div class="card playful-card p-3 px-4">PHP Laravel</div>
+                    <div class="card playful-card p-3 px-4">Vue.js</div>
+                </div>
+             </div>
           </div>
         </div>
       </section>
