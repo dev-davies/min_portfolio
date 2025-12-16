@@ -2,34 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 0. Splitting.js Init
   Splitting();
 
-  // 0.5 Swiper Init
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    keyboard: {
-      enabled: true,
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-      // when window width is >= 768px
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      // when window width is >= 992px
-      992: {
-        slidesPerView: 3,
-        spaceBetween: 30
-      }
-    }
-  });
+
 
   // 0. Typed.js Initialization
   if (document.querySelector(".typed-text")) {

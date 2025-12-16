@@ -52,63 +52,51 @@ Scroll on. The good stuff lives just below.</p>
         </div>
       </section>
 
-       <section id="projects" class="projects py-5 bg-light">
-        <div class="container">
+       <section id="projects" class="projects py-5 bg-light position-relative overflow-hidden">
+        <!-- Floating Doodles -->
+        <div class="doodle-shape doodle-circle" style="top: 10%; left: -5%;"></div>
+        <div class="doodle-shape doodle-cross" style="top: 20%; right: 10%;"></div>
+        <div class="doodle-shape doodle-squiggle" style="bottom: 15%; left: 10%;"></div>
+        <div class="doodle-shape doodle-circle" style="bottom: 5%; right: -2%; transform: scale(1.5);"></div>
+
+        <div class="container position-relative" style="z-index: 1;">
           <h3 class="section-title">Selected Projects</h3>
           
-          <!-- Swiper -->
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <article class="card playful-card h-100">
-                  <img src="images/project1.svg" class="card-img-top project-photo" alt="Project 1">
-                  <div class="card-body">
-                    <h5 class="card-title">Project A</h5>
-                    <p class="card-text">A lightweight UI kit built with performance and joy in mind.</p>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="card playful-card h-100">
-                  <img src="images/project2.svg" class="card-img-top project-photo" alt="Project 2">
-                  <div class="card-body">
-                    <h5 class="card-title">Project B</h5>
-                    <p class="card-text">An API visualization tool with delightful micro-interactions.</p>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="card playful-card h-100">
-                  <img src="images/project3.svg" class="card-img-top project-photo" alt="Project 3">
-                  <div class="card-body">
-                    <h5 class="card-title">Project C</h5>
-                    <p class="card-text">A freelance client dashboard with pragmatic UX and strong typography.</p>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="card playful-card h-100">
-                  <img src="images/project1.svg" class="card-img-top project-photo" alt="Project 4">
-                  <div class="card-body">
-                    <h5 class="card-title">Project D</h5>
-                    <p class="card-text">E-commerce concept focused on smooth cart transitions.</p>
-                  </div>
-                </article>
-              </div>
-              <div class="swiper-slide">
-                <article class="card playful-card h-100">
-                  <img src="images/project2.svg" class="card-img-top project-photo" alt="Project 5">
-                  <div class="card-body">
-                    <h5 class="card-title">Project E</h5>
-                    <p class="card-text">Interactive storytelling experiment using scroll-triggered APIs.</p>
-                  </div>
-                </article>
-              </div>
+          <!-- Custom 2-1 Grid Layout -->
+          
+          <!-- Row 1: Two Projects -->
+          <div class="row justify-content-center gy-4 mb-4">
+            <div class="col-md-6">
+              <article class="card playful-card h-100">
+                <img src="images/project1.svg" class="card-img-top project-photo" alt="Project A">
+                <div class="card-body">
+                  <h5 class="card-title">Project A</h5>
+                  <p class="card-text">A lightweight UI kit built with performance and joy in mind.</p>
+                </div>
+              </article>
             </div>
-            
-            <div class="swiper-pagination mt-4"></div>
-            <div class="swiper-button-next d-none d-md-block"></div>
-            <div class="swiper-button-prev d-none d-md-block"></div>
+            <div class="col-md-6">
+              <article class="card playful-card h-100">
+                <img src="images/project2.svg" class="card-img-top project-photo" alt="Project B">
+                <div class="card-body">
+                  <h5 class="card-title">Project B</h5>
+                  <p class="card-text">An API visualization tool with delightful micro-interactions.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Row 2: One Centered Project -->
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <article class="card playful-card h-100">
+                <img src="images/project3.svg" class="card-img-top project-photo" alt="Project C">
+                <div class="card-body">
+                  <h5 class="card-title">Project C</h5>
+                  <p class="card-text">A freelance client dashboard with pragmatic UX and strong typography.</p>
+                </div>
+              </article>
+            </div>
           </div>
         </div>
       </section>
