@@ -99,6 +99,17 @@ h6,
   box-shadow: 1px 1px 0 var(--black);
 }
 
+/* Fix for navbar buttons disappearing text on click/focus/hover issues */
+.site-header .btn:hover,
+.site-header .btn:focus,
+.site-header .btn:active {
+  background-color: var(--black) !important;
+  color: var(--white) !important;
+  box-shadow: 1px 1px 0 var(--black);
+  transform: translate(2px, 2px);
+  outline: none;
+}
+
 /* Navigation */
 .site-header {
   border-bottom: var(--border-width) solid var(--black);
