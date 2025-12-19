@@ -5,6 +5,25 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Davies — Developer Portfolio</title>
+
+  <!-- Social Sharing / Open Graph Tags -->
+  <meta property="og:title" content="Davies — Developer Portfolio">
+  <meta property="og:description"
+    content="Clean code. Serious results. I design and build clean, responsive web experiences.">
+  <meta property="og:image" content="images/portrait.jpg">
+  <!-- REPLACE with valid absolute URL for social previews (e.g. https://davies.dev/images/portrait.jpg) -->
+  <meta property="og:url" content="https://davies.dev">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Davies — Developer Portfolio">
+  <meta name="twitter:description" content="Clean code. Serious results. Full stack developer based in Nigeria.">
+  <meta name="twitter:image" content="images/portrait.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="images/portrait.jpg">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Inter:wght@300;600&display=swap"
     rel="stylesheet">
@@ -48,7 +67,10 @@
                   the goal is simple: make the web feel easy, fast, and human.
 
                   Scroll on. The good stuff lives just below.</p>
-                <p><a href="#contact" class="btn btn-dark btn-lg">Say hello</a></p>
+                <div class="d-flex text-center justify-content-center gap-2">
+                  <a href="#contact" class="btn btn-dark btn-lg">Say hello</a>
+                  <a href="resume.pdf" class="btn btn-outline-dark btn-lg" target="_blank">Download CV</a>
+                </div>
               </div>
             </div>
           </div>
@@ -273,7 +295,7 @@
         <p class="mb-4">Send a message</p>
         <div class="row">
           <div class="col-md-8">
-            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+            <form id="contactForm" action="https://formspree.io/f/mnnekqvn" method="POST"
               class="contact-form card p-4 shadow-sm">
               <div class="mb-3">
                 <label class="form-label">Name</label>
