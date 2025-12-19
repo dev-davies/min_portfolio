@@ -1,282 +1,336 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Davies — Developer Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Inter:wght@300;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/splitting.css">
-    <link rel="stylesheet" href="css/swiper.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
-  <body>
-    <header class="site-header py-4">
-      <div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between gap-3">
-        <div class="brand text-center text-md-start">
-          <h1 class="m-0 display-name">Davies</h1>
-          <p class="m-0 subtitle"><span class="typed-text"></span></p>
-        </div>
-        <nav class="d-flex flex-wrap justify-content-center gap-2 align-items-center">
-          <a href="#projects" class="nav-link btn btn-outline-dark btn-sm m-0">Work</a>
-          <a href="#about" class="nav-link btn btn-outline-dark btn-sm m-0">About</a>
-          <a href="#contact" class="nav-link btn btn-outline-dark btn-sm m-0">Contact</a>
-        </nav>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Davies — Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Inter:wght@300;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/splitting.css">
+  <link rel="stylesheet" href="css/swiper.css">
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <header class="site-header py-4">
+    <div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between gap-3">
+      <div class="brand text-center text-md-start">
+        <h1 class="m-0 display-name">Davies.dev</h1>
+        <p class="m-0 subtitle"><span class="typed-text"></span></p>
       </div>
-    </header>
+      <nav class="d-flex flex-wrap justify-content-center gap-2 align-items-center">
+        <a href="#projects" class="nav-link btn btn-outline-dark btn-sm m-0">Work</a>
+        <a href="#about" class="nav-link btn btn-outline-dark btn-sm m-0">About</a>
+        <a href="#contact" class="nav-link btn btn-outline-dark btn-sm m-0">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero py-5">
-        <div class="container">
-          <div class="row align-items-center justify-content-center">
-            <div class="col-lg-7 mb-4 mb-lg-0">
-              <div class="card playful-card askew-card p-5">
-                <div class="hero-text">
-                  <h2 class="mb-3" data-splitting>Playful code. Serious results.</h2>
-                  <p class="lead mb-4">Hi, I’m Davies. I design and build clean, responsive web experiences where clarity 
-                    comes first and complexity stays politely behind the curtain. 
-                    Every pixel has a job, every interaction a purpose.
-This is a space for thoughtful front-end craftsmanship. Smooth layouts,
- intuitive flows, and code that behaves itself. Whether it’s a landing page, 
- a full product interface, or something still taking shape in your imagination, 
- the goal is simple: make the web feel easy, fast, and human.
- 
-Scroll on. The good stuff lives just below.</p>
-                  <p><a href="#contact" class="btn btn-dark btn-lg">Say hello</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-4 offset-lg-1 text-center font-weight-bold mt-5 mt-lg-0">
-               <!-- Image standalone on the side, slightly rotated for fun -->
-               <img src="images/portrait.svg" alt="Davies portrait" class="img-fluid color-photo playful-card" style="transform: rotate(3deg);">
-            </div>
-          </div>
-        </div>
-      </section>
+  <main>
+    <section class="hero py-5">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-7 mb-4 mb-lg-0">
+            <div class="card playful-card askew-card p-5">
+              <div class="hero-text">
+                <h2 class="mb-3">Clean code. Serious results.</h2>
+                <p class="lead mb-4">Hi, I’m Davies. I design and build clean, responsive web experiences where clarity
+                  comes first and complexity stays politely behind the curtain.
+                  Every pixel has a job, every interaction a purpose.
+                  This is a space for thoughtful front-end craftsmanship. Smooth layouts,
+                  intuitive flows, and code that behaves itself. Whether it’s a landing page,
+                  a full product interface, or something still taking shape in your imagination,
+                  the goal is simple: make the web feel easy, fast, and human.
 
-       <section id="projects" class="projects py-5 bg-light position-relative overflow-hidden">
-        <!-- Floating Doodles -->
-        <div class="doodle-shape doodle-circle" style="top: 10%; left: -5%;"></div>
-        <div class="doodle-shape doodle-cross" style="top: 20%; right: 10%;"></div>
-        <div class="doodle-shape doodle-squiggle" style="bottom: 15%; left: 10%;"></div>
-        <div class="doodle-shape doodle-circle" style="bottom: 5%; right: -2%; transform: scale(1.5);"></div>
-        <!-- More Doodles -->
-        <div class="doodle-shape doodle-cross" style="top: 55%; left: 5%;"></div>
-        <div class="doodle-shape doodle-circle" style="top: 40%; right: 25%; transform: scale(0.8);"></div>
-        <div class="doodle-shape doodle-squiggle" style="top: 10%; left: 40%; transform: rotate(90deg);"></div>
-        <div class="doodle-shape doodle-cross" style="bottom: 30%; right: 5%;"></div>
-        <div class="doodle-shape doodle-circle" style="bottom: 10%; left: 30%; transform: scale(1.2);"></div>
-
-        <div class="container position-relative" style="z-index: 1;">
-          <h3 class="section-title">Selected Projects</h3>
-          
-          <!-- Custom 2-1 Grid Layout -->
-          
-          <!-- Row 1: Two Projects -->
-          <div class="row justify-content-center gy-4 mb-4">
-            <div class="col-md-6">
-              <article class="card playful-card h-100">
-                <img src="images/project1.svg" class="card-img-top project-photo" alt="Project A">
-                <div class="card-body">
-                  <h5 class="card-title">Project A</h5>
-                  <p class="card-text">A lightweight UI kit built with performance and joy in mind.</p>
-                </div>
-              </article>
-            </div>
-            <div class="col-md-6">
-              <article class="card playful-card h-100">
-                <img src="images/project2.svg" class="card-img-top project-photo" alt="Project B">
-                <div class="card-body">
-                  <h5 class="card-title">Project B</h5>
-                  <p class="card-text">An API visualization tool with delightful micro-interactions.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-
-          <!-- Row 2: One Centered Project -->
-          <div class="row justify-content-center">
-            <div class="col-md-6">
-              <article class="card playful-card h-100">
-                <img src="images/project3.svg" class="card-img-top project-photo" alt="Project C">
-                <div class="card-body">
-                  <h5 class="card-title">Project C</h5>
-                  <p class="card-text">A freelance client dashboard with pragmatic UX and strong typography.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-
-      <section id="about" class="about py-5">
-        <div class="container">
-          <h3 class="section-title">About</h3>
-          <div class="row justify-content-center">
-            <div class="col-lg-7">
-              <div class="card playful-card askew-card p-5 text-center">
-                <div class="mb-4"><p>Hi — I'm <strong>Davies</strong>, a developer based in Nigeria. 
-                  I specialise in building maintainable web apps with a focus on usability, 
-                  accessibility, and a little personality. I’m a developer who enjoys turning ideas into digital products that don’t panic when they grow. 
- I build projects with scale in mind from sleek landing pages that load fast and convert quietly, 
- to full-blown web applications and ecommerce platforms designed to handle real users doing real things.</p>
-
-<P>My approach blends structure and curiosity. 
-I care about clean architecture, reusable components, and interfaces that stay intuitive even as features multiply. 
-Whether it’s a startup finding its feet or a business ready to level up online, 
-I focus on building systems that can evolve without needing to be rebuilt every six months.</P>
-
-<P>Outside the editor, I recharge in a few familiar ways. 
-I read novels to steal perspective from other worlds, keep rap music close for rhythm and focus, 
-and take my coffee seriously enough to call it a daily ritual. Somewhere between chapters, playlists, 
-and caffeine, most of my best ideas tend to show up.</P>
-
-<p>At the end of the day, I build for people. Code is just the tool. 
-The goal is creating web experiences that feel solid today and ready for whatever comes next.
-</p></div>
-                <a href="#contact" class="btn btn-outline-dark">Let's work</a>
+                  Scroll on. The good stuff lives just below.</p>
+                <p><a href="#contact" class="btn btn-dark btn-lg">Say hello</a></p>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="skills" class="skills py-5 bg-white position-relative overflow-hidden">
-        <!-- Doodles -->
-        <div class="doodle-shape doodle-cross" style="top: 10%; right: 5%;"></div>
-        <div class="doodle-shape doodle-circle" style="bottom: 15%; left: 5%;"></div>
-        <div class="doodle-shape doodle-squiggle" style="top: 40%; right: 15%; transform: rotate(-45deg);"></div>
-
-        <div class="container position-relative" style="z-index: 1;">
-          <h3 class="section-title">Toolkit</h3>
-          <div class="row justify-content-center mt-3">
-             <div class="col-lg-8">
-                <div class="d-flex flex-wrap justify-content-center gap-3">
-                    <div class="card playful-card p-3 px-4">HTML</div>
-                    <div class="card playful-card p-3 px-4">CSS</div>
-                    <div class="card playful-card p-3 px-4">JavaScript</div>
-                    <div class="card playful-card p-3 px-4">Bootstrap</div>
-                    <div class="card playful-card p-3 px-4">Python</div>
-                    <div class="card playful-card p-3 px-4">PHP Laravel</div>
-                    <div class="card playful-card p-3 px-4">Vue.js</div>
-                </div>
-             </div>
+          <div class="col-lg-4 offset-lg-1 text-center font-weight-bold mt-5 mt-lg-0">
+            <!-- Image standalone on the side, slightly rotated for fun -->
+            <img src="images/portrait.jpg" alt="Davies portrait" class="img-fluid color-photo playful-card"
+              style="transform: rotate(3deg);">
           </div>
         </div>
-      </section>
-
-
-
-      <section id="experience" class="experience py-5">
-        <div class="container">
-          <h3 class="section-title">Experience</h3>
-          <div class="row justify-content-center">
-            <div class="col-lg-8">
-              
-              <!-- Job 1 -->
-              <div class="card playful-card mb-4">
-                <div class="card-body p-4">
-                  <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
-                    <h5 class="card-title mb-0 fw-bold">Novel Integrated Services Limited</h5>
-                    <span class="badge bg-dark rounded-pill">Oct 2025 - Present</span>
-                  </div>
-                  <h6 class="text-muted mb-3">Web Developer</h6>
-                  <p class="card-text">Building and maintaining web solutions using a full suite of modern development tools. Collaborating with cross-functional teams to deliver high-quality digital products.</p>
-                </div>
-              </div>
-
-              <!-- Job 2 -->
-              <div class="card playful-card mb-4">
-                <div class="card-body p-4">
-                  <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
-                    <h5 class="card-title mb-0 fw-bold">Freelance</h5>
-                    <span class="badge bg-light text-dark border border-dark rounded-pill">Sep 2021 - Oct 2025</span>
-                  </div>
-                  <h6 class="text-muted mb-3">Full Stack Developer</h6>
-                  <p class="card-text">Delivered diverse projects for clients including landing pages, web applications, and business sites. Managed the entire development lifecycle from requirement gathering to deployment.</p>
-                </div>
-              </div>
-
-              <!-- Job 3 -->
-              <div class="card playful-card">
-                <div class="card-body p-4">
-                  <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
-                    <h5 class="card-title mb-0 fw-bold">LeadNicely</h5>
-                    <span class="badge bg-light text-dark border border-dark rounded-pill">Mar 2021 - Sep 2021</span>
-                  </div>
-                  <h6 class="text-muted mb-3">WordPress Developer Intern</h6>
-                  <p class="card-text">Gained hands-on experience in remote web development. Specialized in customizing WordPress themes and plugins to meet specific client needs.</p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="contact" class="contact py-5 bg-light position-relative overflow-hidden">
-        <!-- Doodles -->
-        <div class="doodle-shape doodle-circle" style="top: 5%; left: 10%; transform: scale(0.6);"></div>
-        <div class="doodle-shape doodle-squiggle" style="bottom: 10%; right: 5%;"></div>
-        <div class="doodle-shape doodle-cross" style="top: 50%; left: 3%;"></div>
-
-        <div class="container position-relative" style="z-index: 1;">
-          <h3 class="section-title">Contact</h3>
-          <p class="mb-4">Send a message</p>
-          <div class="row">
-            <div class="col-md-8">
-              <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form card p-4 shadow-sm">
-                <div class="mb-3">
-                  <label class="form-label">Name</label>
-                  <input type="text" id="name" name="name" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label">Your Email</label>
-                  <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="mb-3">
-                  <label class="form-label">Message</label>
-                  <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
-                </div>
-                <div class="d-flex align-items-center gap-3">
-                  <button type="submit" class="btn btn-dark">Send Message</button>
-                  <div id="formStatus" class="form-status text-muted small"></div>
-                </div>
-              </form>
-            </div>
-            <div class="col-md-4 mt-3 mt-md-0">
-              <div class="card p-3 playful-card">
-                <h5>Availability</h5>
-                <p class="mb-3">Open for freelance and collaborative projects.</p>
-                <div class="d-flex gap-3">
-                  <a href="#" class="btn btn-sm btn-dark" aria-label="GitHub"><i class="bi bi-github"></i></a>
-                  <a href="#" class="btn btn-sm btn-success" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="py-4 text-center">
-      <div class="container text-muted">
-        <div class="mb-2">
-            <a href="#" class="text-muted text-decoration-none mx-2 fs-4"><i class="bi bi-github"></i></a>
-            <a href="#" class="text-muted text-decoration-none mx-2 fs-4"><i class="bi bi-whatsapp"></i></a>
-        </div>
-        <small>© Davies</small>
       </div>
-    </footer>
+    </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/splitting.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/swiper.js"></script>
-    <script src="js/script.js"></script>
-  </body>
+    <section id="skills" class="skills py-5 bg-white position-relative overflow-hidden">
+      <!-- Doodles -->
+      <div class="doodle-shape doodle-cross" style="top: 10%; right: 5%;"></div>
+      <div class="doodle-shape doodle-circle" style="bottom: 15%; left: 5%;"></div>
+      <div class="doodle-shape doodle-squiggle" style="top: 40%; right: 15%; transform: rotate(-45deg);"></div>
+
+      <div class="container position-relative" style="z-index: 1;">
+        <h3 class="section-title">Toolkit</h3>
+        <div class="row justify-content-center mt-3">
+          <div class="col-lg-8">
+            <div class="d-flex flex-wrap justify-content-center gap-3">
+              <div class="card playful-card p-3 px-4 d-flex flex-column align-items-center gap-2">
+                <i class="devicon-html5-plain colored skill-icon"></i>
+                <span class="small fw-bold">HTML5</span>
+              </div>
+              <div class="card playful-card p-3 px-4 d-flex flex-column align-items-center gap-2">
+                <i class="devicon-css3-plain colored skill-icon"></i>
+                <span class="small fw-bold">CSS3</span>
+              </div>
+              <div class="card playful-card p-3 px-4 d-flex flex-column align-items-center gap-2">
+                <i class="devicon-javascript-plain colored skill-icon"></i>
+                <span class="small fw-bold">JavaScript</span>
+              </div>
+              <div class="card playful-card p-3 px-4 d-flex flex-column align-items-center gap-2">
+                <i class="devicon-bootstrap-plain colored skill-icon"></i>
+                <span class="small fw-bold">Bootstrap</span>
+              </div>
+              <div class="card playful-card p-3 px-4 d-flex flex-column align-items-center gap-2">
+                <i class="devicon-python-plain colored skill-icon"></i>
+                <span class="small fw-bold">Python</span>
+              </div>
+              <div class="card playful-card p-3 px-4 d-flex flex-column align-items-center gap-2">
+                <i class="devicon-laravel-original colored skill-icon"></i>
+                <span class="small fw-bold">Laravel</span>
+              </div>
+              <div class="card playful-card p-3 px-4 d-flex flex-column align-items-center gap-2">
+                <i class="devicon-vuejs-plain colored skill-icon"></i>
+                <span class="small fw-bold">Vue.js</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects py-5 bg-light position-relative overflow-hidden">
+      <!-- Floating Doodles -->
+      <div class="doodle-shape doodle-circle" style="top: 10%; left: -5%;"></div>
+      <div class="doodle-shape doodle-cross" style="top: 20%; right: 10%;"></div>
+      <div class="doodle-shape doodle-squiggle" style="bottom: 15%; left: 10%;"></div>
+      <div class="doodle-shape doodle-circle" style="bottom: 5%; right: -2%; transform: scale(1.5);"></div>
+      <!-- More Doodles -->
+      <div class="doodle-shape doodle-cross" style="top: 55%; left: 5%;"></div>
+      <div class="doodle-shape doodle-circle" style="top: 40%; right: 25%; transform: scale(0.8);"></div>
+      <div class="doodle-shape doodle-squiggle" style="top: 10%; left: 40%; transform: rotate(90deg);"></div>
+      <div class="doodle-shape doodle-cross" style="bottom: 30%; right: 5%;"></div>
+      <div class="doodle-shape doodle-circle" style="bottom: 10%; left: 30%; transform: scale(1.2);"></div>
+
+      <div class="container position-relative" style="z-index: 1;">
+        <h3 class="section-title">Selected Projects</h3>
+
+        <!-- Custom 2-1 Grid Layout -->
+
+        <!-- Row 1: Two Projects -->
+        <div class="row justify-content-center gy-4 mb-4">
+          <div class="col-md-6">
+            <article class="card playful-card h-100">
+              <img src="images/Prime Pay - [www.prime-pay.africa].png" class="card-img-top project-photo"
+                alt="PrimePay Africa">
+              <div class="card-body">
+                <h5 class="card-title">PrimePay</h5>
+                <p class="card-text">A fintech platform revolutionizing credit access with instant loans and Buy Now,
+                  Pay Later solutions.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-6">
+            <article class="card playful-card h-100">
+              <img
+                src="images/Novel Solar_ Leading Solar Energy Company in Nigeria - novelsolar_ - [novelsolar.com] (1).png"
+                class="card-img-top project-photo" alt="NovelSolar">
+              <div class="card-body">
+                <h5 class="card-title">NovelSolar</h5>
+                <p class="card-text">Leading Nigerian solar energy provider offering alternative power solutions,
+                  manufacturing, and installations.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <!-- Row 2: One Centered Project -->
+        <div class="row justify-content-center">
+          <div class="col-md-6">
+            <article class="card playful-card h-100">
+              <img src="images/Zitra Investments - [www.zitrainvestments.com].png" class="card-img-top project-photo"
+                alt="Zitra Investments">
+              <div class="card-body">
+                <h5 class="card-title">Zitra Investments</h5>
+                <p class="card-text">Financial services firm engaging in private wealth management, structured
+                  investments, and accessible lending.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="about" class="about py-5">
+      <div class="container">
+        <h3 class="section-title">About</h3>
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="card playful-card askew-card p-5 text-center">
+              <div class="mb-4">
+                <p>Hi — I'm <strong>Davies</strong>, a developer based in Nigeria.
+                  I specialise in building maintainable web apps with a focus on usability,
+                  accessibility, and a little personality. I’m a developer who enjoys turning ideas into digital
+                  products that don’t panic when they grow.
+                  I build projects with scale in mind from sleek landing pages that load fast and convert quietly,
+                  to full-blown web applications and ecommerce platforms designed to handle real users doing real
+                  things.</p>
+
+                <P>My approach blends structure and curiosity.
+                  I care about clean architecture, reusable components, and interfaces that stay intuitive even as
+                  features multiply.
+                  Whether it’s a startup finding its feet or a business ready to level up online,
+                  I focus on building systems that can evolve without needing to be rebuilt every six months.</P>
+
+                <P>Outside the editor, I recharge in a few familiar ways.
+                  I read novels to steal perspective from other worlds, keep rap music close for rhythm and focus,
+                  and take my coffee seriously enough to call it a daily ritual. Somewhere between chapters, playlists,
+                  and caffeine, most of my best ideas tend to show up.</P>
+
+                <p>At the end of the day, I build for people. Code is just the tool.
+                  The goal is creating web experiences that feel solid today and ready for whatever comes next.
+                </p>
+              </div>
+              <a href="#contact" class="btn btn-outline-dark">Let's work</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section id="experience" class="experience py-5">
+      <div class="container">
+        <h3 class="section-title">Experience</h3>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+
+            <!-- Job 1 -->
+            <div class="card playful-card mb-4">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                  <h5 class="card-title mb-0 fw-bold">Novel Integrated Services Limited</h5>
+                  <span class="badge bg-dark rounded-pill">Oct 2025 - Present</span>
+                </div>
+                <h6 class="text-muted mb-3">Web Developer</h6>
+                <p class="card-text">Building and maintaining web solutions using a full suite of modern development
+                  tools. Collaborating with cross-functional teams to deliver high-quality digital products.</p>
+              </div>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="card playful-card mb-4">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                  <h5 class="card-title mb-0 fw-bold">Freelance</h5>
+                  <span class="badge bg-light text-dark border border-dark rounded-pill">Sep 2021 - Oct 2025</span>
+                </div>
+                <h6 class="text-muted mb-3">Full Stack Developer</h6>
+                <p class="card-text">Delivered diverse projects for clients including landing pages, web applications,
+                  and business sites. Managed the entire development lifecycle from requirement gathering to deployment.
+                </p>
+              </div>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="card playful-card">
+              <div class="card-body p-4">
+                <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
+                  <h5 class="card-title mb-0 fw-bold">LeadNicely</h5>
+                  <span class="badge bg-light text-dark border border-dark rounded-pill">Mar 2021 - Sep 2021</span>
+                </div>
+                <h6 class="text-muted mb-3">WordPress Developer Intern</h6>
+                <p class="card-text">Gained hands-on experience in remote web development. Specialized in customizing
+                  WordPress themes and plugins to meet specific client needs.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact py-5 bg-light position-relative overflow-hidden">
+      <!-- Doodles -->
+      <div class="doodle-shape doodle-circle" style="top: 5%; left: 10%; transform: scale(0.6);"></div>
+      <div class="doodle-shape doodle-squiggle" style="bottom: 10%; right: 5%;"></div>
+      <div class="doodle-shape doodle-cross" style="top: 50%; left: 3%;"></div>
+
+      <div class="container position-relative" style="z-index: 1;">
+        <h3 class="section-title">Contact</h3>
+        <p class="mb-4">Send a message</p>
+        <div class="row">
+          <div class="col-md-8">
+            <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST"
+              class="contact-form card p-4 shadow-sm">
+              <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Your Email</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Message</label>
+                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+              </div>
+              <div class="d-flex align-items-center gap-3">
+                <button type="submit" class="btn btn-dark">Send Message</button>
+                <div id="formStatus" class="form-status text-muted small"></div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-4 mt-3 mt-md-0">
+            <div class="card p-3 playful-card">
+              <h5>Availability</h5>
+              <p class="mb-3">Open for freelance and collaborative projects.</p>
+              <div class="d-flex gap-3">
+                <a href="https://github.com/dev-davies/" class="btn btn-sm btn-dark" aria-label="GitHub"><i
+                    class="bi bi-github"></i></a>
+                <a href="https://wa.me/2348168171961" class="btn btn-sm btn-success" aria-label="WhatsApp"><i
+                    class="bi bi-whatsapp"></i></a>
+                <a href="mailto:dvsolaniyi@gmail.com" class="btn btn-sm btn-dark" aria-label="Email"><i
+                    class="bi bi-envelope-fill"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-4 text-center">
+    <div class="container text-muted">
+      <div class="mb-2">
+        <a href="https://github.com/dev-davies/" class="text-muted text-decoration-none mx-2 fs-4"><i
+            class="bi bi-github"></i></a>
+        <a href="https://wa.me/2348168171961" class="text-muted text-decoration-none mx-2 fs-4"><i
+            class="bi bi-whatsapp"></i></a>
+        <a href="mailto:dvsolaniyi@gmail.com" class="text-muted text-decoration-none mx-2 fs-4"><i
+            class="bi bi-envelope-fill"></i></a>
+      </div>
+      <small>© Davies</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/splitting.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/swiper.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
 </html>

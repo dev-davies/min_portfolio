@@ -24,9 +24,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const y = e.clientY - rect.top;
       const centerX = rect.width / 2;
       const centerY = rect.height / 2;
-      
+
       // Calculate rotation (max 10 degrees)
-      const rotateX = ((y - centerY) / centerY) * -10; 
+      const rotateX = ((y - centerY) / centerY) * -10;
       const rotateY = ((x - centerX) / centerX) * 10;
 
       card.style.transition = "none"; // Disable transition for instant response
@@ -204,11 +204,11 @@ function confetti({ particleCount, origin, colors }) {
     el.style.top = '50%'; // Start from middle side
     if (origin.x === 0) el.style.top = '80%'; // Adjust based on mock usage
     el.style.top = '90%'; // Just shoot from bottom corners?
-    
+
     // Better implementation:
     el.style.left = (origin.x === 0 ? '0' : '100vw');
     el.style.top = '80vh';
-    
+
     document.body.appendChild(el);
 
     // Animate
